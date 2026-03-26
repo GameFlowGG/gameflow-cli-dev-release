@@ -28,9 +28,32 @@ The GameFlow CLI lets you manage your GameFlow resources from the terminal — d
 
 ---
 
-## Download
+## Install
 
-Grab the latest dev build from the [Releases](https://github.com/GameFlowGG/gameflow-cli-dev-release/releases) page.
+### macOS & Linux
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/install.sh | sh
+```
+
+This will:
+1. Detect your OS and architecture automatically
+2. Download the latest dev binary to `~/.gameflow/bin/gameflow`
+3. Add it to your `PATH`
+
+To install a specific version instead of `dev`:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/install.sh | sh -s 1.2.0
+```
+
+### Windows
+
+Download the binary directly from the [Releases](https://github.com/GameFlowGG/gameflow-cli-dev-release/releases) page (`gameflow-windows-amd64.exe`).
+
+### Manual download
+
+All platform binaries are available on the [Releases](https://github.com/GameFlowGG/gameflow-cli-dev-release/releases) page.
 
 | Platform | Architecture | Binary |
 |----------|-------------|--------|
@@ -39,15 +62,6 @@ Grab the latest dev build from the [Releases](https://github.com/GameFlowGG/game
 | macOS    | x86_64      | `gameflow-darwin-amd64` |
 | macOS    | Apple Silicon | `gameflow-darwin-arm64` |
 | Windows  | x86_64      | `gameflow-windows-amd64.exe` |
-
-### Quick install (macOS/Linux)
-
-```bash
-# macOS Apple Silicon example
-curl -L https://github.com/GameFlowGG/gameflow-cli-dev-release/releases/download/dev/gameflow-darwin-arm64 -o gameflow
-chmod +x gameflow
-sudo mv gameflow /usr/local/bin/gameflow
-```
 
 ---
 
