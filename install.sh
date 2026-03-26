@@ -47,9 +47,23 @@ echo "Downloading GameFlow CLI $TAG (${os}/${arch})..."
 mkdir -p "$BIN_DIR"
 
 if command -v curl >/dev/null 2>&1; then
-  curl --fail --location --progress-bar --output "$EXE" "$DOWNLOAD_URL"
+  if ! curl --fail --location --progress-bar --output "$EXE" "$DOWNLOAD_URL"; then
+    echo ""
+    echo "Error: download failed for $DOWNLOAD_URL"
+    echo "The release '$TAG' may not exist yet. Check available releases at:"
+    echo "  https://github.com/$REPO/releases"
+    rm -f "$EXE"
+    exit 1
+  fi
 elif command -v wget >/dev/null 2>&1; then
-  wget -q --show-progress -O "$EXE" "$DOWNLOAD_URL"
+  if ! wget -q --show-progress -O "$EXE" "$DOWNLOAD_URL"; then
+    echo ""
+    echo "Error: download failed for $DOWNLOAD_URL"
+    echo "The release '$TAG' may not exist yet. Check available releases at:"
+    echo "  https://github.com/$REPO/releases"
+    rm -f "$EXE"
+    exit 1
+  fi
 else
   echo "Error: curl or wget is required"
   exit 1
