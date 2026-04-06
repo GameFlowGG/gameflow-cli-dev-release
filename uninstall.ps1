@@ -1,5 +1,5 @@
 # GameFlow CLI uninstaller for Windows
-# Usage: irm https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/uninstall.ps1 | iex
+# Usage: irm https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-releases/main/uninstall.ps1 | iex
 
 $ErrorActionPreference = "Stop"
 

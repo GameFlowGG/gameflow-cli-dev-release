@@ -2,7 +2,7 @@
 set -e
 
 # GameFlow CLI uninstaller
-# Usage: curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/uninstall.sh | sh
+# Usage: curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-releases/main/uninstall.sh | sh
 
 INSTALL_DIR="${GAMEFLOW_INSTALL:-$HOME/.gameflow}"
 BIN_DIR="$INSTALL_DIR/bin"

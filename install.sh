@@ -2,9 +2,9 @@
 set -e
 
 # GameFlow CLI installer
-# Usage: curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/install.sh | sh
+# Usage: curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-releases/main/install.sh | sh
 
-REPO="GameFlowGG/gameflow-cli-dev-release"
+REPO="GameFlowGG/gameflow-cli-releases"
 INSTALL_DIR="${GAMEFLOW_INSTALL:-$HOME/.gameflow}"
 BIN_DIR="$INSTALL_DIR/bin"
 EXE="$BIN_DIR/gameflow"

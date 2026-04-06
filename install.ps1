@@ -1,9 +1,9 @@
 # GameFlow CLI installer for Windows
-# Usage: irm https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/install.ps1 | iex
+# Usage: irm https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-releases/main/install.ps1 | iex
 
 $ErrorActionPreference = "Stop"
 
-$Repo = "GameFlowGG/gameflow-cli-dev-release"
+$Repo = "GameFlowGG/gameflow-cli-releases"
 $InstallDir = if ($env:GAMEFLOW_INSTALL) { $env:GAMEFLOW_INSTALL } else { "$env:USERPROFILE\.gameflow" }
 $BinDir = "$InstallDir\bin"
 $Exe = "$BinDir\gameflow.exe"

@@ -33,7 +33,7 @@ The GameFlow CLI lets you manage your GameFlow resources from the terminal — d
 ### macOS & Linux
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-releases/main/install.sh | sh
 ```
 
 This will:
@@ -44,7 +44,7 @@ This will:
 To install a specific version instead of `dev`:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/install.sh | sh -s 1.2.0
+curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-releases/main/install.sh | sh -s 1.2.0
 ```
 
 ### Windows
@@ -52,7 +52,7 @@ curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release
 Run in PowerShell:
 
 ```powershell
-irm https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-releases/main/install.ps1 | iex
 ```
 
 This will download the latest dev binary to `%USERPROFILE%\.gameflow\bin\gameflow.exe` and add it to your user `PATH`. No admin rights required.
@@ -60,7 +60,7 @@ This will download the latest dev binary to `%USERPROFILE%\.gameflow\bin\gameflo
 To install a specific version:
 
 ```powershell
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/install.ps1))) 1.2.0
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-releases/main/install.ps1))) 1.2.0
 ```
 
 ---
@@ -70,13 +70,13 @@ To install a specific version:
 ### macOS & Linux
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/uninstall.sh | sh
+curl -fsSL https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-releases/main/uninstall.sh | sh
 ```
 
 ### Windows
 
 ```powershell
-irm https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-dev-release/main/uninstall.ps1 | iex
+irm https://raw.githubusercontent.com/GameFlowGG/gameflow-cli-releases/main/uninstall.ps1 | iex
 ```
 
 Both scripts remove the install directory (including config and stored credentials) and clean up your `PATH`.
@@ -85,7 +85,7 @@ Both scripts remove the install directory (including config and stored credentia
 
 ### Manual download
 
-All platform binaries are available on the [Releases](https://github.com/GameFlowGG/gameflow-cli-dev-release/releases) page.
+All platform binaries are available on the [Releases](https://github.com/GameFlowGG/gameflow-cli-releases/releases) page.
 
 | Platform | Architecture | Binary |
 |----------|-------------|--------|
