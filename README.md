@@ -1,8 +1,6 @@
-# GameFlow CLI — Dev Releases
+# GameFlow CLI — Releases
 
-This repository hosts **pre-release and development builds** of the [GameFlow CLI](https://github.com/GameFlowGG/gameflow-cli).
-
-> **These are not stable releases.** Dev builds are published automatically on every commit to `main` and are intended for testing and early access only.
+This repository hosts **builds** of the GameFlow CLI.
 
 ---
 
@@ -24,7 +22,7 @@ Learn more at [gameflow.gg](https://www.gameflow.gg/) · [docs.gameflow.gg](http
 
 ## About the CLI
 
-The GameFlow CLI lets you manage your GameFlow resources from the terminal — deployments, server fleets, matchmaking configuration, and more.
+The GameFlow CLI lets you manage your GameFlow resources from the terminal — builds, server fleets, matchmaking configuration, and more.
 
 ---
 
@@ -97,19 +95,7 @@ All platform binaries are available on the [Releases](https://github.com/GameFlo
 
 ---
 
-## Release cadence
-
-| Tag | Triggered by | Stability |
-|-----|-------------|-----------|
-| `dev` | Every push to `main` | Unstable — may break at any time |
-| `vX.Y.Z` | Manual workflow dispatch | Pre-release candidate |
-
-For stable releases, see the [main CLI repository](https://github.com/GameFlowGG/gameflow-cli).
-
----
-
 ## Links
 
 - Website: https://www.gameflow.gg/
 - Documentation: https://docs.gameflow.gg/
-- CLI source: https://github.com/GameFlowGG/gameflow-cli
